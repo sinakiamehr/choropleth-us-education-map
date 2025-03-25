@@ -4,11 +4,13 @@
   padding: 2rem;
   text-align: center;
 }
+h1,h2 {
+  color: white;
+  text-align: center;
+}
 
 #title {
-  text-align: center;
   font-size: 20px;
-  font-weight: bold;
   color: white;
 }
 

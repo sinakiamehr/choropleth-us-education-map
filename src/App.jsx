@@ -47,9 +47,9 @@ function App() {
     d3.select(svgRef.current).selectAll('*').remove()
 
     //set dimensions for the svg and padding
-    const width = 800
-    const height = 600
-    const padding = 50
+    const width = 1200
+    const height = 800
+    const padding = 100
 
     //initialize svg element
     const svg = d3.select(svgRef.current)
@@ -63,7 +63,6 @@ function App() {
       .attr('text-anchor', 'middle')
       .attr("id", "title")
       .attr('fill', 'white')
-     .text('United States Educational Attainment')
 
     //add description
     svg.append('text')
@@ -72,7 +71,7 @@ function App() {
      .attr('text-anchor','middle')
      .attr("id", "description")
      .attr('fill', 'white')
-    .text('Percentage of adults age 25 and older with a bachelor\'s degree or higher (2010-2014)')
+    
 
     // Create color scale
     const minEducation = d3.min(data, d => d.bachelorsOrHigher)
@@ -130,7 +129,7 @@ function App() {
 
     const legend = svg.append('g')
       .attr('id', 'legend')
-      .attr('transform', `translate(${(width - padding) * 0.67}, ${height - padding})`)
+      .attr('transform', `translate(${(width - padding)/2}, ${height - padding * 2.3})`)
 
     legend.selectAll('rect')
       .data(colorScale.range().slice(0, -1))
@@ -165,7 +164,8 @@ function App() {
     <>
       <div className='app-div'>
         <header>
-          <p>This is in implementation of Choropleth of US Education Attainment</p>
+          <h1 id="title">United States Educational Attainment</h1>
+          <h2 id="description">Percentage of adults age 25 and older with a bachelor\'s degree or higher (2010-2014)</h2>
         </header>
        
        <svg ref={svgRef}></svg>
