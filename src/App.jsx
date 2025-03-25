@@ -165,7 +165,7 @@ function App() {
       <div className='app-div'>
         <header>
           <h1 id="title">United States Educational Attainment</h1>
-          <h2 id="description">Percentage of adults age 25 and older with a bachelor\'s degree or higher (2010-2014)</h2>
+          <h2 id="description">Percentage of adults age 25 and older with a bachelor's degree or higher (2010-2014)</h2>
         </header>
        
        <svg ref={svgRef}></svg>
