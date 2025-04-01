@@ -62,7 +62,7 @@ function App() {
       .attr('y', padding / 2)
       .attr('text-anchor', 'middle')
       .attr("id", "title")
-      .attr('fill', 'white')
+      .attr('fill', 'black')
 
     //add description
     svg.append('text')
@@ -70,7 +70,7 @@ function App() {
      .attr('y', padding / 2 + 20)
      .attr('text-anchor','middle')
      .attr("id", "description")
-     .attr('fill', 'white')
+     .attr('fill', 'black')
     
 
     // Create color scale
