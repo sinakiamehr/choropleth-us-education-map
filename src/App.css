@@ -44,7 +44,7 @@ h1,h2 {
 .footer {
   margin-top: 20px;
   text-align: center;
-  color: #bbb;
+  color: grey;
   font-size: 0.9rem;
   padding: 10px;
 }
@@ -55,5 +55,5 @@ h1,h2 {
 }
 
 .footer strong {
-  color: white;
+  color: black;
 }
